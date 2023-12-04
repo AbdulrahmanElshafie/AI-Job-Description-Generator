@@ -33,7 +33,7 @@ if response == 'Submit':
     file = open('positions.txt', 'r')
     positions = file.read().split('\n')
 
-    bot = Bot(company_industry=company_info[0], company_name=company_info[1])
+    bot = Bot(company_industry=company_info[0], company_name=company_info[1], driver_path=r"Your Path")
     bot.login()
 
     for i in tqdm(range(len(positions)), desc="Tasks remaining", unit="task", ncols=60,
