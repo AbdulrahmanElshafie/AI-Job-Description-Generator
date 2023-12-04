@@ -7,7 +7,7 @@ from tqdm import tqdm
 
 
 class Bot(webdriver.Chrome):
-    def __init__(self, company_name, company_industry, driver_path=r"D:\Coding\Python\Assistant",
+    def __init__(self, company_name, company_industry, driver_path=PATH,
                  teardown=False):
         os.environ['PATH'] += driver_path
         self.company_name = company_name
